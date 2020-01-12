@@ -1,2 +1,9 @@
 https://github.com/cod3rcursos/knowledge
 
+CREATE DATABASE knowledge_final;
+\c knowledge_final;
+\dt
+update users set admin = true where id = 1;
+
+
+
