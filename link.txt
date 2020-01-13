@@ -4,6 +4,9 @@ CREATE DATABASE knowledge_final;
 \c knowledge_final;
 \dt
 update users set admin = true where id = 1;
+em frontend: npm run serve -- --port 8081
+em backend: npm start
+terminal windows: psql -U postgres
 
 
 
