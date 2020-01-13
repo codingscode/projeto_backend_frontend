@@ -1,12 +1,20 @@
 https://github.com/cod3rcursos/knowledge
 
+terminal windows: psql -U postgres
 CREATE DATABASE knowledge_final;
 \c knowledge_final;
 \dt
 update users set admin = true where id = 1;
 em frontend: npm run serve -- --port 8081
 em backend: npm start
-terminal windows: psql -U postgres
+terminal windows: psql -U postgres ; knowledge_final
 
+
+CREATE DATABASE knowledge;
+\c knowledge
+\dt
+em backend: knex migrate:make create_table_users
+em backend: knex migrate:make create_table_categories
+em backend: knex migrate:make create_table_articles
 
 
