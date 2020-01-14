@@ -28,5 +28,14 @@ npm start e no cmd: \dt
 
 
 
-
+cmd windows: select * from users;
+em postman:
+{
+  "name": "Aladin Salim",
+  "email": "aladin@gmail.com",
+  "password": "din1",
+  "confirmPassword": "din1",
+  "admin": true
+}
+cmd windows: select * from users;
 

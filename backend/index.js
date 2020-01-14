@@ -6,6 +6,7 @@ app.db = db
 
 consign()
   .then('./config/middlewares.js')
+  .then('./api/validation.js')
   .then('./api')
   .then('./config/routes.js')
   .into(app)
@@ -17,4 +18,4 @@ app.listen(3000, () => {
 
 
 
-
+//em postman: localhost:3000/users
