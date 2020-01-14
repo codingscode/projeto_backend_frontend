@@ -18,3 +18,15 @@ em backend: knex migrate:make create_table_categories
 em backend: knex migrate:make create_table_articles
 
 
+em backend: knex migrate:latest
+em terminal windows: \dt
+em terminal windows: select * from knex_migrations;
+em backend: knex migrate:rollback
+em terminal windows: \dt
+em terminal windows: select * from knex_migrations;
+npm start e no cmd: \dt
+
+
+
+
+
