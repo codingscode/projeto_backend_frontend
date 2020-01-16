@@ -46,6 +46,20 @@ em postman: localhost:3000/users
 //
 em postman: localhost:3000/users/1
 
+//
+em postman: localhost:3000/categories
+body -> raw ->: 
+{
+  "name": "Web Moderno"
+} //com post
+{
+  "name": "CSS",
+  "parentId": 1
+} //com post
+put -> body : localhost:3000/categories/5
+{
+  "name": "Pra Excluir"
+}  experimentar o delete, get
 
 
 
