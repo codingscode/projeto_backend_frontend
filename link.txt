@@ -46,6 +46,7 @@ em postman: localhost:3000/users
 //
 em postman: localhost:3000/users/1
 
+
 //
 em postman: localhost:3000/categories
 body -> raw ->: 
@@ -60,6 +61,10 @@ put -> body : localhost:3000/categories/5
 {
   "name": "Pra Excluir"
 }  experimentar o delete, get
+
+
+//
+em postman: localhost:3000/categories/tree
 
 
 
