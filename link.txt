@@ -67,4 +67,35 @@ put -> body : localhost:3000/categories/5
 em postman: localhost:3000/categories/tree
 
 
+//
+em postman: localhost:3000/articles
+post -> body:
+{
+  "name": "10 Motivos para usar VueJS",
+  "description": "O artigo aborda os aspectos...",
+  "userId": 1,
+  "categoryId": 4,
+  "content": "Conteúdo do artigo..."
+}
+em postman: localhost:3000/articles/1
+put -> body
+{
+  "name": "10 Motivos para usar VueJS",
+  "description": "O artigo aborda os aspectos...",
+  "userId": 1,
+  "categoryId": 4,
+  "content": "Conteúdo do artigo alterado..."
+}
+em postman: localhost:3000/articles
+post -> body
+{
+  "name": "10 Motivos para usar VueJS",
+  "description": "O artigo aborda os aspectos...",
+  "userId": 1,
+  "categoryId": 4,
+  "content": "Conteúdo do artigo alterado..."
+}
+delete -> body
+apagar pelo id
+
 
