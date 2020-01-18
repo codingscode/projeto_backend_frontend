@@ -99,3 +99,10 @@ delete -> body
 apagar pelo id
 
 
+//
+em cmd postgres banco knowledge:  select * from categories;
+  "          select * from categories where id in (1, 2, 3);
+  "          select * from articles where "categoryId" in (4, 5, 6, 7, 8);
+em postman: localhost:3000/categories/4/articles  //com get
+
+
