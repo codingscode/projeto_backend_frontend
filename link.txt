@@ -106,3 +106,14 @@ em cmd postgres banco knowledge:  select * from categories;
 em postman: localhost:3000/categories/4/articles  //com get
 
 
+//
+em postman: http://localhost:3000/signin
+post -> body
+{
+  "email": "naosei@algumacoisa.com.br",
+  "password": "senha"
+}
+
+
+
+
