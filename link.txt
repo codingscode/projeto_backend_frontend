@@ -106,6 +106,7 @@ em cmd postgres banco knowledge:  select * from categories;
 em postman: localhost:3000/categories/4/articles  //com get
 
 
+
 //
 em postman: http://localhost:3000/signin
 post -> body
@@ -113,6 +114,29 @@ post -> body
   "email": "naosei@algumacoisa.com.br",
   "password": "senha"
 }
+{
+  "name": "Aladin Salim",
+  "email": "aladin@gmail.com",
+  "password": "din1",
+  "confirmPassword": "din1",
+  "admin": true
+}
+
+
+//
+em postman: 
+post -> body: localhost:3000/signin
+{
+  "email": "aladin@gmail.com",
+  "password": "din1"
+}
+pegar o token;
+get -> headers: localhost:3000/categories 
+digitar "bearer token" em Authorization
+  
+
+
+
 
 
 
