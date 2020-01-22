@@ -135,6 +135,21 @@ get -> headers: localhost:3000/categories
 digitar "bearer token" em Authorization
   
 
+//
+em postman:
+post -> body: localhost:3000/signin
+{
+  "email": "appolopet@gmail.com",
+  "password": "din1"
+}
+post -> headers: localhost:3000/categories   com o token correspondente
+{
+  "email": "polao@gmail.com",
+  "password": "pol1"
+}
+get -> headers
+localhost:3000/categories/tree localhost:3000/categories/1
+
 
 
 
