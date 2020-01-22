@@ -153,6 +153,10 @@ localhost:3000/categories/tree localhost:3000/categories/1
 
 
 
+//
+experimentar deixar o mongodb desligado
+get -> headers
+localhost:3000/stats
 
 
 
