@@ -1,5 +1,7 @@
 // Update with your config settings.
 
+const {db} = require('./.env')
+
 module.exports = {
   /*development: {
     client: 'sqlite3',
@@ -26,11 +28,7 @@ module.exports = {
 
   //production: {
     client: 'postgresql',
-    connection: {
-      database: 'knowledge',
-      user:     'postgres',
-      password: 'din1'
-    },
+    connection: db,
     pool: {
       min: 2,
       max: 10

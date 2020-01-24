@@ -160,8 +160,8 @@ localhost:3000/stats
 
 
 // 
-digitar em t. backend: knex migrate:make add_deleted_at_table_users
-digitar em t. backend: knex migrate:latest
+digitar em t. backend: knex migrate:make add_deleted_at_table_users  //cria arquivo
+digitar em t. backend: knex migrate:latest     //cria arquivo
 em t. postgres banco knowledge: select * from users;
 em postman: post -> body
 localhost:3000/signin
@@ -174,4 +174,10 @@ localhost:3000/users
 get -> headers
 Authorization: bearer token;
 delete em localhost:3000/users/2
+
+
+//
+
+
+
 
