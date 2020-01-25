@@ -176,8 +176,38 @@ Authorization: bearer token;
 delete em localhost:3000/users/2
 
 
-//
 
+//
+em postman: localhost:3000/signup
+post-> body
+{
+  "name": "Fulano ciclanus",
+  "email": "fulanos@yahoo.com",
+  "password": "din1",
+  "confirmPassword": "din1",
+  "admin": true
+}
+em t. postgres banco knowledge: select * from users;
+em postman: localhost:3000/signup
+post-> body
+{
+  "name": "Roberto robertis",
+  "email": "roberts@yahoo.com",
+  "password": "din1",
+  "confirmPassword": "din1",
+  "admin": true
+}
+em t. postgres banco knowledge: select * from users;
+em postman: localhost:3000/users
+post-> body
+{
+  "name": "Maria",
+  "email": "maria@yahoo.com",
+  "password": "din1",
+  "confirmPassword": "din1",
+  "admin": true
+}
+em t. postgres banco knowledge: select * from users;
 
 
 
