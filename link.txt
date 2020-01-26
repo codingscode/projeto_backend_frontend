@@ -210,4 +210,15 @@ post-> body
 em t. postgres banco knowledge: select * from users;
 
 
+//frontend
+em terminal frontend: npm i
+em terminal frontend: npm run serve
+browser: localhost:8080
+terminal cmd : mongod
+
+
+
+
+
+
 
