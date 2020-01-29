@@ -2,10 +2,10 @@
     <div class="user-dropdown">
        <div class="user-button">
            <span class="d-none d-sm-block">{{user.name}}</span>
-        <div class="user-dropdown-img">
-            <Gravatar :email="user.email" alt="User" />
-        </div>
-        <i class="fa fa-angle-down"></i>
+           <div class="user-dropdown-img">
+                <Gravatar :email="user.email" alt="User" />
+           </div>
+           <i class="fa fa-angle-down"></i>
        </div>
        <div class="user-dropdown-content">
            <a href=""><i class="fa fa-cogs"></i> Administração</a>
