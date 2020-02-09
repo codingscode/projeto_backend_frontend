@@ -218,6 +218,10 @@ terminal cmd : mongod
 
 
 
+//
+\d categories
+
+
 
 
 
