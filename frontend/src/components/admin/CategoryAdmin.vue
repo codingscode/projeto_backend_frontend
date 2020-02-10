@@ -2,34 +2,16 @@
     <div class="category-admin">
         <b-form>
             <input id="category-id" type="hidden" v-model="category.id" />
-            <b-row>
-                <b-col xs="12">
                     <b-form-group label="Nome:" label-for="category-name">
                          <b-form-input id="category-name" type="text" v-model="category.name" required :readonly="mode === 'remove'" placeholder="Informe o Nome da Categoria..." />
                     </b-form-group>
-                </b-col>
-            </b-row>
-            <b-row v-if="mode === 'save'">
-                <b-col xs="12">
                     <b-form-group label="Categoria Pai :" label-for="category-parentId">
-                         <b-form-select id="category-parentId" :options="categories" v-model="category.parentId" :readonly="mode === 'remove'"/>
+                         <b-form-select v-if="mode === 'save'" id="category-parentId" :options="categories" v-model="category.parentId" :readonly="mode === 'remove'"/>
+                         <b-form-input v-else id="category-parentId" type="text" v-model="category.path" readonly />
                     </b-form-group>
-                </b-col>
-            </b-row>
-            <b-row v-else>
-                <b-col xs="12">
-                    <b-form-group label="Categoria Pai :" label-for="category-parentId">
-                         <b-form-input id="category-parentId" type="text" v-model="category.path" readonly />
-                    </b-form-group>
-                </b-col>
-            </b-row>
-            <b-row>
-                <b-col xs="12">
                     <b-button variant="primary" v-if="mode === 'save'" @click="save">Salvar</b-button>
                     <b-button variant="danger" v-if="mode === 'remove'" @click="remove">Excluir</b-button>
                     <b-button class="ml-2" @click="reset">Cancelar</b-button>
-                </b-col>
-            </b-row>
         </b-form>
         <hr>
         <b-table hover striped :items="categories" :fields="fields">
