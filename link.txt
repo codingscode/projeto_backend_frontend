@@ -222,6 +222,10 @@ terminal cmd : mongod
 \d categories
 
 
+//
+localhost:8080/categories/1/articles
+localhost:8080/categories/2/articles
+
 
 
 
