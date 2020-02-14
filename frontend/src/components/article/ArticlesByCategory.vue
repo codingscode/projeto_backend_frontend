@@ -2,7 +2,9 @@
      <div class="articles-by-category">
          <PageTitle icon="fa fa-folder-o" :main="category.name" sub="Categoria" />
          <ul>
-             <li v-for="article in articles" :key="article.id" >{{article.name}}</li>
+             <li v-for="article in articles" :key="article.id" >
+                 <ArticleItem :article="article" />
+             </li>
          </ul>
          <div class="load-more">
              <button v-if="loadMore" class="btn btn-lg btn-outline-primary" @click="getArticles" >Carregar Mais Artigos</button>
@@ -14,10 +16,11 @@
 import {baseApiUrl} from '@/global'
 import axios from 'axios'
 import PageTitle from '../template/PageTitle'
+import ArticleItem from './ArticleItem'
 
 export default {
     name: 'ArticlesByCategory',
-    components: {PageTitle},
+    components: {PageTitle, ArticleItem},
     data: function() {
         return {
             category: {},
