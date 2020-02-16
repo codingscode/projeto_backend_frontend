@@ -230,6 +230,7 @@ localhost:8080/categories/2/articles
 //
 http://localhost:8080/categories/1/articles
 
-
+//
+http://localhost:8080/articles/1
 
 
