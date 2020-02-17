@@ -236,6 +236,7 @@ http://localhost:8080/articles/1
 
 //
 http://localhost:8080/auth
+http://localhost:8080
 em console:
 localStorage._knowledge_user
 localStorage.removeItem('_knowledge_user')
