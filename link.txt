@@ -234,3 +234,10 @@ http://localhost:8080/categories/1/articles
 http://localhost:8080/articles/1
 
 
+//
+http://localhost:8080/auth
+em console:
+localStorage._knowledge_user
+localStorage.removeItem('_knowledge_user')
+
+
